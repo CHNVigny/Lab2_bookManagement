@@ -11,7 +11,7 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
   <head>
     <base href="<%=basePath%>">
     
-    <title>SUCCESS!</title>
+    <title>My JSP 'Search.jsp' starting page</title>
     
 	<meta http-equiv="pragma" content="no-cache">
 	<meta http-equiv="cache-control" content="no-cache">
@@ -25,14 +25,11 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
   </head>
   
   <body>
-   <%String name=request.getParameter("name");%>
-    删除成功！ <br>
-     <form method=get action=Allbooks.jsp>
+    <form action="detectAuthor.action">
 
-
-		<input type=submit value=AllBooks>
+		根据作者名字查询:<input type="text" name="name"> <input type="submit"
+			value="submit">
 
 	</form>
-  	<a href="SearchAccordingToAuthor.jsp?name=<%=name%>">查看该作者的其他书目</a>&nbsp;<a href="index.jsp">返回主页</a><br>
   </body>
 </html>

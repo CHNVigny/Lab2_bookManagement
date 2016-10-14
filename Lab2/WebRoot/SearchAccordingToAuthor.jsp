@@ -36,9 +36,9 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
     for(book bk:list)
      {%>
      <tr>
-     <a href="BookInformation.jsp?isbn=<%=bk.getIsbn() %>"><%=bk.getTitle() %></a>
-     <a href="DeleteBook.action?isbn=<%=bk.getIsbn() %>&name=<%=name %>">delete</a><br>
+     <a style="text-decoration:none" href="BookInformation.jsp?isbn=<%=bk.getIsbn() %>"><%=bk.getTitle() %></a>
+     <a style="text-decoration:none" href="DeleteBook.action?isbn=<%=bk.getIsbn() %>&name=<%=name %>">delete</a><br>
      <%} %>
-   <a href="index.jsp">main</a><br>
+   <a style="text-decoration:none" href="index.jsp">main</a><br>
   </body>
 </html>

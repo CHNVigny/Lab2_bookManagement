@@ -69,7 +69,7 @@ public class DetectAuthor {
 	}
 	
 	public static int detectAuthor1(String name)throws SQLException, UnsupportedEncodingException{
-		name=new String(name.getBytes("ISO-8859-1"),"UTF-8");
+		//name=new String(name.getBytes("ISO-8859-1"),"UTF-8");
 		java.sql.Connection conn = null;
 		PreparedStatement pstmt = null;
 		ResultSet rs=null;

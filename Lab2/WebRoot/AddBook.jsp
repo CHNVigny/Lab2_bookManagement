@@ -25,8 +25,37 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
   </head>
   
   <body>
+  <style type="text/css">
+/* Border styles */
+#table-2 thead, #table-2 tr {
+border-top-width: 1px;
+border-top-style: solid;
+border-top-color: rgb(230, 189, 189);
+}
+#table-2 {
+border-bottom-width: 1px;
+border-bottom-style: solid;
+border-bottom-color: rgb(230, 189, 189);
+}
+
+/* Padding and font style */
+#table-2 td, #table-2 th {
+padding: 5px 10px;
+font-size: 12px;
+font-family: Verdana;
+color: rgb(177, 106, 104);
+}
+
+/* Alternating background colors */
+#table-2 tr:nth-child(even) {
+background: rgb(238, 211, 210)
+}
+#table-2 tr:nth-child(odd) {
+background: #FFF
+}
+</style>
   <form action="addBook.action" accept-charset="UTF-8"> 
-	<table border="1">
+	<table id="table-2" align="center">
 		
 		<tr>
 			
@@ -57,6 +86,6 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
 		
 	</table>
 	</form> 
-	<a href="javascript:history.go(-1);">return</a>&nbsp;<a href="index.jsp">main</a>
+	<a style="text-decoration:none" href="javascript:history.go(-1);">return</a>&nbsp;<a style="text-decoration:none" href="index.jsp">main</a>
 </body>
 </html>
