@@ -23,7 +23,23 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
 	-->
 	
 	
-  <link href="../css/button.css" rel="stylesheet" type="text/css">
+  	<link rel="stylesheet" type="text/css" href="styles.css">
+	
+	
+ 	<link rel="stylesheet" href="http://cdn.bootcss.com/animate.css/3.2.0/animate.min.css">
+  	<link rel="stylesheet" href="css/showcase.css">
+  	<link rel="stylesheet" href="css/buttons.css">
+  	<link rel="stylesheet" href="css/grids.css">
+
+
+  	<!-- ICONS & FONTS -->
+  	<link href="http://cdn.bootcss.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
+  	<link rel="stylesheet" href="fonts/icomoon/style.css">
+
+ 	
+  	<link href="Flat-UI-master/dist/css/flat-ui.css" rel="stylesheet" type="text/css">
+  	<link href="css/flat-ui.css" rel="stylesheet">
+  	<link rel="shortcut icon" href="images/favicon.ico">
   </head>
   
   <body>
@@ -98,6 +114,18 @@ background: #FFF
   	    
   	    </table><br>
   	  
-  	  <a href="index.jsp" class="button button-glow button-border button-rounded button-primary">返回主页</a></div>
+  	  <a href="index.jsp" class="btn btn-large btn-block btn-info">返回主页</a>
+  	</div>
+  	<script src="http://cdn.bootcss.com/jquery/1.9.1/jquery.min.js"></script>
+    <script src="js/jquery-ui-1.10.0.custom.min.js"></script>
+    <script src="js/jquery.dropkick-1.0.0.js"></script>
+    <script src="js/custom_checkbox_and_radio.js"></script>
+    <script src="js/custom_radio.js"></script>
+    <script src="js/bootstrap-tooltip.js"></script>
+    <script src="js/jquery.tagsinput.js"></script>
+    <script src="http://cdn.bootcss.com/jquery-placeholder/2.0.7/jquery.placeholder.min.js"></script>
+    <script src="http://vjs.zencdn.net/c/video.js"></script>
+    <script src="js/application.js"></script>
+    <script src="/p/projects.js"></script>
   </body>
 </html>

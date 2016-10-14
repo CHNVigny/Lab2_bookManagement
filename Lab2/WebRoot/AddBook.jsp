@@ -21,7 +21,23 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
 	<!--
 	<link rel="stylesheet" type="text/css" href="styles.css">
 	-->
+	<link href="http://cdn.bootcss.com/twitter-bootstrap/2.2.2/css/bootstrap.min.css" rel="stylesheet">
 
+    <!-- Loading Flat UI -->
+    <link href="css/flat-ui.css" rel="stylesheet">
+    <link rel="shortcut icon" href="images/favicon.ico">
+    <link rel="stylesheet" href="http://cdn.bootcss.com/animate.css/3.2.0/animate.min.css">
+  	<link rel="stylesheet" href="css/showcase.css">
+  	<link rel="stylesheet" href="css/buttons.css">
+  	<link rel="stylesheet" href="css/grids.css">
+  	
+  
+
+
+  	<!-- ICONS & FONTS -->
+  	<link href="http://cdn.bootcss.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
+  	<link rel="stylesheet" href="fonts/icomoon/style.css">
+  	
   </head>
   
   <body>
@@ -54,8 +70,10 @@ background: rgb(238, 211, 210)
 background: #FFF
 }
 </style>
-  <form action="addBook.action" accept-charset="UTF-8"> 
-	<table id="table-2" align="center">
+
+<div class="span3" align="center">
+  <form action="addBook.action" accept-charset="UTF-8">
+<table id="table-2" align="center">
 		
 		<tr>
 			
@@ -67,25 +85,67 @@ background: #FFF
 			<td>author</td> 
 			<td>author age</td> 
 			<td>author country</td> 
+			<td></td>
+			<td></td>
 		</tr>
 		
 			<tr>
 			
-			<td><input type=text name="isbn"></td> 
-			<td><input type=text name="title"></td> 
-			<td><input type=text name="publisher"></td> 
-			<td><input type=text name="publishdate"></td> 
-			<td><input type=text name="price"></td> 
-			<td><input type=text name="name"></td> 
-			<td><input type=text name="age"></td> 
-			<td><input type=text name="country"></td> 
-			<td><input type=submit value="submit">
+			<td><input style="width:120px;" class="span3" type=text name="isbn"></td> 
+			<td><input style="width:120px;" class="span3" type=text name="title"></td> 
+			<td><input style="width:120px;" class="span3" type=text name="publisher"></td> 
+			<td><input style="width:120px;" class="span3" type=text name="publishdate"></td> 
+			<td><input style="width:120px;" class="span3" type=text name="price"></td> 
+			<td><input style="width:120px;" class="span3" type=text name="name"></td> 
+			<td><input style="width:120px;" class="span3" type=text name="age"></td> 
+			<td><input style="width:120px;" class="span3" type=text name="country"></td> 
+			<td><input class="btn btn-warning btn-large btn-block" type=submit value="submit"></td>
+			<td><a href="index.jsp" class="btn btn-large btn-block btn-danger" style="width:52.8px;">主页</a></td>
 			
 		</tr>
 		
 		
 	</table>
 	</form> 
-	<a style="text-decoration:none" href="javascript:history.go(-1);">return</a>&nbsp;<a style="text-decoration:none" href="index.jsp">main</a>
+	</div>
+	<br>
+	<br>
+	<br>
+	<br>
+	<br>
+	<br>
+	
+  
+   
+    
+     
+   
+     
+   
+    <div align="justify"><!-- /container -->
+      
+      
+      <script src="http://cdn.bootcss.com/jquery/1.9.1/jquery.min.js"></script>
+      <script src="js/jquery-ui-1.10.0.custom.min.js"></script>
+      <script src="js/jquery.dropkick-1.0.0.js"></script>
+      <script src="js/custom_checkbox_and_radio.js"></script>
+      <script src="js/custom_radio.js"></script>
+      <script src="js/bootstrap-tooltip.js"></script>
+      <script src="js/jquery.tagsinput.js"></script>
+      <script src="http://cdn.bootcss.com/jquery-placeholder/2.0.7/jquery.placeholder.min.js"></script>
+      <script src="http://vjs.zencdn.net/c/video.js"></script>
+      <script src="js/application.js"></script>
+      <script src="/p/projects.js"></script>
+      <script src="http://cdn.bootcss.com/prettify/r298/prettify.min.js"></script>
+      <script src="http://cdn.bootcss.com/jquery/1.11.2/jquery.min.js"></script>
+      <script type="text/javascript" src="js/scrollMonitor.js"></script>
+      <script type="text/javascript" src="js/zeroclipboard/dist/ZeroClipboard.js"></script>
+      <script type="text/javascript" src="js/polyfill.js"></script>
+      <script type="text/javascript" src="js/smooth-scroll.js"></script>
+      <script type="text/javascript" src="js/handlebars.js"></script>
+      <script type="text/javascript" src="js/showcase.js"></script>
+      <script type="text/javascript" src="js/buttons.js"></script>
+      <script src="/p/projects.js"></script>
+  </div>
 </body>
 </html>

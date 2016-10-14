@@ -7,47 +7,132 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
 %>
 
 <!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
-<html>
+<html lang="en" class="dk-fouc has-js">
   <head>
     <base href="<%=basePath%>">
-    <link rel="stylesheet" href="../css/responsive-nav.css">
-	<script src="../js/responsive-nav.js"></script>
+    <link rel="stylesheet" type="text/css" href="styles.css">
+	
+	
+ 	<link rel="stylesheet" href="http://cdn.bootcss.com/animate.css/3.2.0/animate.min.css">
+  	<link rel="stylesheet" href="css/showcase.css">
+  	<link rel="stylesheet" href="css/buttons.css">
+  	<link rel="stylesheet" href="css/grids.css">
+
+
+  	<!-- ICONS & FONTS -->
+  	<link href="http://cdn.bootcss.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
+  	<link rel="stylesheet" href="fonts/icomoon/style.css">
+
+ 	
+  	<link href="Flat-UI-master/dist/css/flat-ui.css" rel="stylesheet" type="text/css">
+  	<link href="css/flat-ui.css" rel="stylesheet">
+  	<link rel="shortcut icon" href="images/favicon.ico">
+    
     <title>Welcome to my library!</title>
     
-	<meta http-equiv="pragma" content="no-cache">
-	<meta http-equiv="cache-control" content="no-cache">
-	<meta http-equiv="expires" content="0">    
-	<meta http-equiv="keywords" content="keyword1,keyword2,keyword3">
-	<meta http-equiv="description" content="This is my page">
-	<!--
-	<link rel="stylesheet" type="text/css" href="styles.css">
-	-->
 	
-  </head>
-  <script>
-  var navigation = responsiveNav("#nav",{ // Selector: The ID of the wrapper
-  animate: true, // Boolean: 是否启动CSS过渡效果（transitions）， true 或 false
-  transition: 400, // Integer: 过渡效果的执行速度，以毫秒（millisecond）为单位
-  label: "Menu", // String: Label for the navigation toggle
-  insert: "after", // String: Insert the toggle before or after the navigation
-  customToggle: "", // Selector: Specify the ID of a custom toggle
-  openPos: "relative", // String: Position of the opened nav, relative or static
-  jsClass: "js", // String: 'JS enabled' class which is added to <html> el
-  debug: false, // Boolean: Log debug messages to console, true 或 false
-  init: function(){}, // Function: Init callback
-  open: function(){}, // Function: Open callback
-  close: function(){} // Function: Close callback
-});
-</script>
+	<meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+	
+	
+  	</head>
+
   <body>
-  	<div role="navigation" id="nav" class="closed" aria-hidden="false" style="transition: max-height 400ms; position: relative;">
-  <ul>
-    <li><a href="welcome.jsp">首页</a></li>
-    <li><a href="Search.jsp">根据作者查询</a></li>
-    <li><a href="Allbooks.jsp">查看所有书籍</a></li>
-    <li><a href="AddBook.jsp">添加书籍</a></li>
-  </ul>
+  <h3 align="center" class="demo-logo">欢迎登陆图书管理系统</h3>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  
+  	<div class="container">
+      
+      <div class="row demo-row">
+        <div class="span3">
+          <div align="center"><a href="Search.jsp" class="btn btn-large btn-block btn-success">作者查询</a></div>
+        </div>
+        
+        
+       
+      </div> <!-- /row -->
+
+    </div> <!-- /container -->
+    <br>
+    <div class="container">
+     <br>
+      <div class="row demo-row">
+        
+        <div class="span3">
+          <div align="center"><a href="Allbooks.jsp" class="btn btn-large btn-block btn-primary">馆藏书籍</a>
+          </div>
+        </div>
+        
+       
+      </div> <!-- /row -->
+	
+    </div> <!-- /container -->
+    <br>
+    <div class="container">
+      <br>
+      <div class="row demo-row">
+       
+        
+        <div class="span3">
+          <div align="center"><a href="AddBook.jsp" class="btn btn-large btn-block btn-info"> 添加书籍  </a></div>
+        </div>
+       
+      </div> <!-- /row -->
+
+    </div> <!-- /container -->
+<!--   
+<div class="container">
+  	<h3 align="center" class="demo-logo">欢迎登陆图书管理系统</h3>
+  	
+ 
+  	<div class="row demo-row" >
+   
+      <div class="span3"><a href="Search.jsp" class="button button-glow button-border button-rounded button-primary">根据作者查询</a></div>
+    
+      <div class="span3"><a href="Allbooks.jsp" class="button button-glow button-border button-rounded button-primary">根据作者查询</a></div>
+   
+      <div class="span3"><a href="AddBook.jsp" class="button button-glow button-border button-rounded button-primary">添加书籍</a></div>
+   
 </div>
+-->
+<!--  
+<section id="buttons-glow" class="showcase">
+  <div class="l-over showcase-content">
+
+  	<div class="showcase-examples l-over l-center">
+  
+  		<a href="Search.jsp" class="button button-glow button-border button-rounded button-primary">根据作者查询</a>
+  		<a href="Allbooks.jsp" class="button button-glow button-border button-rounded button-primary">查看所有书籍</a>
+  		<a href="AddBook.jsp" class="button button-glow button-border button-rounded button-primary">添加书籍</a>
+  </div>
+
+  </div>
+
+  </section>
+-->
+<!--  
+<div class="row demo-row">
+	<div class="showcase-examples l-over l-center" >
+		<div align="center"><a href="Search.jsp" class="btn btn-large btn-block">根据作者查询</a>
+          </div>
+	</div>
+   	<div class="showcase-examples l-over l-center">
+		<div align="center"><a href="Allbooks.jsp" class="btn btn-large btn-block">查看所有书籍</a>
+        </div>
+	</div>
+    <div class="showcase-examples l-over l-center">
+		<div align="center"><a href="AddBook.jsp" class="btn btn-large btn-block">添加书籍</a>
+        </div>
+	</div>
+  </div> <!-- /row -->
+
 <!--  
 	<form action="Search.jsp">
 
@@ -67,6 +152,18 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
 
 	</form>
 -->
+</div>
+	<script src="http://cdn.bootcss.com/jquery/1.9.1/jquery.min.js"></script>
+    <script src="js/jquery-ui-1.10.0.custom.min.js"></script>
+    <script src="js/jquery.dropkick-1.0.0.js"></script>
+    <script src="js/custom_checkbox_and_radio.js"></script>
+    <script src="js/custom_radio.js"></script>
+    <script src="js/bootstrap-tooltip.js"></script>
+    <script src="js/jquery.tagsinput.js"></script>
+    <script src="http://cdn.bootcss.com/jquery-placeholder/2.0.7/jquery.placeholder.min.js"></script>
+    <script src="http://vjs.zencdn.net/c/video.js"></script>
+    <script src="js/application.js"></script>
+    <script src="/p/projects.js"></script>
 </body>
 </html>
 
